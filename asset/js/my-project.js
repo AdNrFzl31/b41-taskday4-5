@@ -56,7 +56,7 @@ function addProject(event) {
         nodeJs,
         image,
         postAt: new Date(),
-        author: "Elon Musk"
+        author: "Ade Nur Faizal"
     }
 
     console.log(nameProject)
