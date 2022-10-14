@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+    margin: 0px;
+    background-color: #e3e7eb;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Form */
+
+.my-project {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+form {
+    width: 400px;
+    margin: auto;
+    padding: 10px;
+}
+
+form div {
+    margin-top: 15px;
+
+}
+
+label {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+input:not([type='checkbox']),
+textarea {
+    background-color: #ffffff;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #e9e9e9;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px rgba(128, 128, 128, 0.75);
+}
+
+.date-group {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 0;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 0;
+}
+
+.checkbox-group>div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 50%;
+}
+
+.checkbox-group>div input {
+    width: 20px;
+    height: 20px;
+}
+
+textarea {
+    resize: none;
+}
+
+.img-group{
+    background-color: #ffffff;
+    width: 100%;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #e9e9e9;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px rgba(128, 128, 128, 0.75);
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.input-img{
+    height: 35px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input-img> span {
+   font-size: 15px;
+   height: 100%;
+   padding: 0px 10px;
+   display: flex;
+   align-items: center;
+   border: 1px solid #e9e9e9;
+   background-color: #e4e4e4;
+}
+
+button {
+    background-color: #111727;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 50px;
+    margin-top: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btn-submit {
+    display: flex;
+    float: right;
+}
+
+/* My-Project */
+
+.container {
+    width: 100%;
+    margin: 90px auto;
+    padding: 10px;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.card-group{
+    flex-direction: row;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+}
+
+
+.card {
+    width: 350px; 
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgb(151, 151, 151);    
+}
+
+.card > a {
+    color: black;
+    text-decoration: none;
+}
+
+.image{
+    width: 100%; border-radius: 10px;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.card-body > div > h3{
+    margin: 5px 0px;
+}
+
+.fa-brands{
+    margin: 5px;
+}
+
+.button-group{
+    display: flex;
+    gap: 5px;
+    margin-top: auto;
+}
+
+.btn-card{
+    background-color: #111727;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius:10px;
+    font-size: 15px;
+    cursor: pointer;
+    flex: 1;
+}

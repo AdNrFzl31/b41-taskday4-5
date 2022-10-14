@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link rel="icon" type="image/x-icon" href="/asset/image/logo-tesla2.png">
+    <link rel="stylesheet" href="/asset/css/my-project.css">
+    <link rel="stylesheet" href="/asset/css/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav>
+        <div class="nav-left">
+            <ul>
+                <li>
+                    <img class="logo" src="/asset/image/logo-tesla.png" alt="logo dumbways" />
+                </li>
+                <li>
+                    <a href="/index.html">Home</a>
+                </li>
+                <li>
+                    <a class="aktif" href="/asset/html/my-project.html">My Project</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <ul>
+                <li>
+                    <a href="/asset/html/contact.html">Contact Me</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="my-project">
+        <h2>ADD MY PROJECT</h2>
+        <form onsubmit="addProject(event)">
+            <div>
+                <label for="input-nameProject">Project Name</label>
+                <input type="text" id="input-nameProject" name="input-nameProject" placeholder="Enter name project..."
+                    required>
+            </div>
+            <div class="date-group">
+                <div>
+                    <label for="input-startDate">Start Date</label>
+                    <input type="date" id="input-startDate" name="input-startDate" required>
+                </div>
+                <div>
+                    <label for="input-endDate">End Date</label>
+                    <input type="date" id="input-endDate" name="input-endDate" required>
+                </div>
+            </div>
+            <div>
+                <label for="description">Description</label>
+                <textarea name="description" id="description" cols="10" rows="6" placeholder="Enter your description..."
+                    required></textarea>
+            </div>
+            <div>
+                <label for="">Technologies</label>
+                <div class="checkbox-group">
+                    <div>
+                        <input type="checkbox" id="react" name="react">
+                        <label for="react">React</label>
+                        <!-- <i class="fa-brands fa-react"></i> -->
+                    </div>
+                    <div>
+                        <input type="checkbox" id="javascript" name="javascript">
+                        <label for="javascript">Javascript</label>
+                        <!-- <i class="fa-brands fa-square-js"></i> -->
+                    </div>
+                    <div>
+                        <input type="checkbox" id="golang" name="golang">
+                        <label for="golang">Golang</label>
+                        <!-- <i class="fa-brands fa-golang"></i> -->
+                    </div>
+                    <div>
+                        <input type="checkbox" id="nodeJs" name="nodeJs">
+                        <label for="nodeJs">Node Js</label>
+                        <!-- <i class="fa-brands fa-node-js"></i> -->
+                    </div>
+                </div>
+            </div>
+            <div>
+                <label for="input-image">Upload Image</label>
+                <div class="img-group">
+                    <label for="input-image" class="input-img">
+                        <span>Choose</span>
+                        <img src="/asset/image/file.png" alt="file">
+                    </label>
+                </div>
+                <input type="file" id="input-image" name="input-image" hidden>
+            </div>
+            <div class="btn-submit">
+                <button class="submit">submit</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="container">
+        <h2>MY PROJECT</h2>
+        <div class="card-group" id="content">
+        </div>
+
+        <script src="/asset/js/my-project.js"></script>
+</body>
+
+</html>
