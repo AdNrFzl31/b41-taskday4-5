@@ -1,3 +1,4 @@
+let number = 0;
 let dataProject = [];
 function addProject(event) {
     event.preventDefault()
@@ -79,7 +80,7 @@ function renderProject() {
 
     document.getElementById("content").innerHTML = ''
 
-    for (let index = 0; index < dataProject.length;  index++){  
+    for (let index = 0; index < dataProject.length; index++) {
         console.log(dataProject[index]);
 
         document.getElementById("content").innerHTML += `
@@ -114,44 +115,43 @@ function getDistanceTime(starDate, endDate) {
     let timeNow = new Date(endDate);
     let timePost = new Date(starDate);
 
-    let distance = timeNow - timePost; 
+    let distance = timeNow - timePost;
     console.log(distance);
-  
+
     let milisecond = 1000;
-    let secondInHours = 3600; 
-    let hoursInDay = 24; 
+    let secondInHours = 3600;
+    let hoursInDay = 24;
     let dayInMonth = 30;
-    let monthInYear = 12;  
-  
+    let monthInYear = 12;
+
     let distanceYear = Math.floor(
-      distance / (milisecond * secondInHours * hoursInDay * dayInMonth * monthInYear)
+        distance / (milisecond * secondInHours * hoursInDay * dayInMonth * monthInYear)
     );
-  
+
     let distanceMonth = Math.floor(distance / (milisecond * 60 * 60 * 24 * 30));
     let distanceDay = Math.floor(distance / (milisecond * 60 * 60 * 24));
     let distanceHours = Math.floor(distance / (milisecond * 60 * 60));
     let distanceMinutes = Math.floor(distance / (milisecond * 60));
     let distanceSecond = Math.floor(distance / milisecond);
-  debugger
-    if (distanceYear > 0) {
-      return `${distanceYear} Year ago`  
-    } else if (distanceMonth > 0) {
-      return `${distanceMonth} Month ago`
-    } else if (distanceDay > 0) {
-      return `${distanceDay} Day ago`;
-    } else if (distanceHours > 0) {
-      return `${distanceHours} Hours ago`;
-    } else if (distanceMinutes > 0) {
-      return `${distanceMinutes} Minutes ago`;
-    } else {
-      return `${distanceSecond} Seconds ago`;
-    }
-  }
 
-  function getFullTime(time) {
+    if (distanceYear > 0) {
+        return `${distanceYear} Year ago`
+    } else if (distanceMonth > 0) {
+        return `${distanceMonth} Month ago`
+    } else if (distanceDay > 0) {
+        return `${distanceDay} Day ago`;
+    } else if (distanceHours > 0) {
+        return `${distanceHours} Hours ago`;
+    } else if (distanceMinutes > 0) {
+        return `${distanceMinutes} Minutes ago`;
+    } else {
+        return `${distanceSecond} Seconds ago`;
+    }
+}
+
+function getFullTime(time) {
     let year = time.getFullYear()
     console.log(year)
 
     return `${year}`
 }
-

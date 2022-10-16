@@ -9,7 +9,8 @@ nav {
   }
   
   .logo {
-    width: 100px;
+    width: 50px;
+    border-radius: 0px;
   }
   
   nav ul {
