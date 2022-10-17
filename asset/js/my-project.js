@@ -1,4 +1,3 @@
-let number = 0;
 let dataProject = [];
 function addProject(event) {
     event.preventDefault()
